@@ -14,7 +14,7 @@ The code uses the pertained weights of ResNet18, replaces the last fc layer with
 
 - With learning rate = 1e-3, the loss and accuracy fluctuate and do not converge. Reducing learning rate to 1e-5 solves the problem
 
-- Freezing all layers except the last fc resulted and very low convergence and lower accuracy in the end
+- Freezing all layers except the last fc layer result in very slow convergence and lower accuracy in the end
 
 - CrossEntropyLoss() results in slightly better accuracy than BCELoss() for my dataset
 
