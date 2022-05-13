@@ -21,12 +21,23 @@ import numpy as np
 
 def trainer(ops):
     try:
+        if ops.num_classes == 1:
+            sigmoid_output = True
+        elif ops.num_classes == 2:
+            sigmoid_output = False
+        
         # Use pretrained weights from torch.utils.model_zoo
         model_ = models.resnet18(pretrained=True)
         for (name, module) in model_.named_children():
             print(name)
         num_features = model_.fc.in_features
-        model_.fc = nn.Linear(num_features, ops.num_classes)
+        if sigmoid_output:
+            model_.fc = torch.nn.Sequential( 
+                nn.Linear(num_features, ops.num_classes),
+                nn.Sigmoid()
+            )
+        else:
+            model_.fc = nn.Linear(num_features, ops.num_classes)
 
         # freeze all layers except fc
         #for param in model_.parameters():
@@ -91,11 +102,6 @@ def trainer(ops):
         best_loss = np.inf
         flag_change_lr_cnt = 0 
         init_lr = ops.init_lr 
-
-        if ops.num_classes == 1:
-            sigmoid_output = True
-        elif ops.num_classes == 2:
-            sigmoid_output = False
 
         if sigmoid_output:
             loss_fn = torch.nn.BCELoss()
