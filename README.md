@@ -19,6 +19,6 @@ The code uses the pretained weights of ResNet18, replaces the last fc layer with
 - CrossEntropyLoss() results in slightly better accuracy than BCELoss() for my dataset
 
 # Dataset Source
-Name: Face Mask Lite Dataset
-Author: Prasoon Kottarathil
-https://www.kaggle.com/datasets/prasoonkottarathil/face-mask-lite-dataset
+* Name: Face Mask Lite Dataset
+* Author: Prasoon Kottarathil
+* https://www.kaggle.com/datasets/prasoonkottarathil/face-mask-lite-dataset
