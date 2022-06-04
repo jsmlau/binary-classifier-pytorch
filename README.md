@@ -18,6 +18,5 @@ The code uses the pretained weights of ResNet18, replaces the last fc layer with
 - CrossEntropyLoss() results in slightly better accuracy than BCELoss() for my dataset
 
 # Dataset Source
-* Name: Mask Dataset
-* https://makeml.app/datasets/mask
-* [https://www.kaggle.com/datasets/prasoonkottarathil/face-mask-lite-dataset](https://www.kaggle.com/datasets/andrewmvd/face-mask-detection)
+* Name: Modified LFW Face Dataset
+* [https://makeml.app/datasets/mask](https://medium.com/hackernoon/binary-face-classifier-using-pytorch-2d835ccb7816)
