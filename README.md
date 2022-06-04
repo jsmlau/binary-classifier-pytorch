@@ -1,5 +1,5 @@
 # binary-classifier-pytorch
-PyTorch binary classifier with ResNet and Face Mask Lite dataset
+PyTorch binary classifier with ResNet and Face Mask Detection dataset
 
 # Description:
 
@@ -8,7 +8,6 @@ The code uses the pretained weights of ResNet18, replaces the last fc layer with
     - BCELoss() is used
 - If output size of 2 is used, the index of the max value in the output tensor is used as the class label
     - CrossEntropyLoss() is used
-
 
 # Conclusions and findings
 
@@ -19,6 +18,6 @@ The code uses the pretained weights of ResNet18, replaces the last fc layer with
 - CrossEntropyLoss() results in slightly better accuracy than BCELoss() for my dataset
 
 # Dataset Source
-* Name: Face Mask Lite Dataset
-* Author: Prasoon Kottarathil
-* https://www.kaggle.com/datasets/prasoonkottarathil/face-mask-lite-dataset
+* Name: Mask Dataset
+* https://makeml.app/datasets/mask
+* [https://www.kaggle.com/datasets/prasoonkottarathil/face-mask-lite-dataset](https://www.kaggle.com/datasets/andrewmvd/face-mask-detection)
