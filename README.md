@@ -19,5 +19,4 @@ The code uses the pretained weights of ResNet18, replaces the last fc layer with
 
 # Dataset Source
 * Name: Modified LFW Face Dataset
-* [[https://makeml.app/datasets/mask](https://medium.com/hackernoon/binary-face-classifier-using-pytorch-2d835ccb7816)
-](https://medium.com/hackernoon/binary-face-classifier-using-pytorch-2d835ccb7816)
+* https://medium.com/hackernoon/binary-face-classifier-using-pytorch-2d835ccb7816
