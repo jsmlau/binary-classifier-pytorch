@@ -1,5 +1,5 @@
 # binary-classifier-pytorch
-PyTorch binary classifier with ResNet and Face Mask Detection dataset
+PyTorch binary classifier with ResNet and Face dataset
 
 # Description:
 
